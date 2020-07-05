@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kokoa Tribe</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <style>
+      html,
+      body {
+        font-family: sans-serif;
+        height: 100%;
+        background-color: #1e90ff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .parent__pink {
+        background-color: #ff6b81;
+        width: 300px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .parent__gray {
+        height: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+      }
+      .child__gray {
+        background-color: #d8d8d8;
+        width: 80px;
+        height: 80px;
+      }
+      .child__gray:nth-child(2):hover {
+        background-color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="parent__pink">
+      <div class="parent__gray">
+        <div class="child__gray"></div>
+        <div class="child__gray"></div>
+        <div class="child__gray"></div>
+      </div>
+    </div>
+  </body>
+</html>

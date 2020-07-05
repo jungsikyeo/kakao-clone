@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kokoa Tribe</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <style>
+      htrml,
+      body {
+        font-family: sans-serif;
+        width: 500px;
+        height: 1000px;
+      }
+      .screenOne {
+        background-color: #76c4c6;
+        width: 100%;
+        height: 50%;
+        text-align: center;
+      }
+      .circleBox {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 35%;
+        margin-right: 35%;
+        animation-duration: 1s;
+        animation-name: circleMove;
+        animation-iteration-count: infinite;
+      }
+      .circle {
+        background-color: white;
+        width: 10px;
+        height: 10px;
+        border-radius: 75px;
+      }
+      @keyframes circleMove {
+        0% {
+          transform: none;
+        }
+        100% {
+          transform: rotate(0.5turn);
+        }
+      }
+
+      .screenTwo {
+        background-color: #1fac9c;
+        width: 100%;
+        height: 50%;
+      }
+      .squareBox {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+      .square {
+        background-color: white;
+        width: 10px;
+        height: 40px;
+        margin-left: 5px;
+      }
+
+      .square:nth-child(1) {
+        animation: 1s squareScale infinite ease-in-out;
+        transition-delay: 2s;
+      }
+      .square:nth-child(2) {
+        animation: 1s squareScale infinite ease-in-out 0.1s;
+      }
+      .square:nth-child(3) {
+        animation: 1s squareScale infinite ease-in-out 0.2s;
+      }
+      .square:nth-child(4) {
+        animation: 1s squareScale infinite ease-in-out 0.3s;
+      }
+      .square:nth-child(5) {
+        animation: 1s squareScale infinite ease-in-out 0.4s;
+      }
+      @keyframes squareScale {
+        0% {
+          transform: none;
+        }
+        25% {
+          transform: scaleY(1);
+        }
+        50% {
+          transform: scaleY(3);
+        }
+        75% {
+          transform: none;
+        }
+        100% {
+          transform: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="screenOne">
+      <div class="circleBox">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+    </div>
+    <div class="screenTwo">
+      <div class="squareBox">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+      </div>
+    </div>
+  </body>
+</html>
