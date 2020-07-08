@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+@import "reset.css";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+
+.main-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background-color: #f8f8f8;
+  border-radius: 40px;
+  box-shadow: 5px 5px 10px 5px gray;
+}
+
+.header {
+  width: 90%;
+  padding: 45px 60px;
+  display: flex;
+  justify-content: center;
+}
+.header .header__title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #383838;
+}
+
+.input-box {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.input-box .input-box__input {
+  width: 100%;
+  height: 50px;
+  border: 2px solid lightgray;
+  border-radius: 10px;
+  outline: 0;
+  padding: 10px;
+  opacity: 0.6;
+}
+
+.forgot-text {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  color: red;
+}
+.forgot-text .forgot-text__link {
+  right: 0;
+}
+
+.check-box {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.check-box .check-box__text {
+  left: 0;
+  opacity: 0.6;
+}
+
+.g-btn {
+  height: 60px;
+  border-radius: 30px;
+  color: white;
+  border: 0;
+  outline: 0;
+}
+.g-btn:hover {
+  cursor: pointer;
+}
+
+.btn-signin {
+  width: 100%;
+  margin-top: 50px;
+  background-color: #e2283e;
+}
+
+.or-text {
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.btn-box {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
+.btn-box .btn-facebook {
+  width: 48%;
+  background-color: #475a95;
+}
+.btn-box .btn-twitter {
+  width: 48%;
+  background-color: #5da1f2;
+}
+
+.bottom {
+  width: 100%;
+  height: 50px;
+  margin-top: 50px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.bottom .bottom__link-box .link-box__question {
+  opacity: 0.6;
+}
+.bottom .bottom__link-box .link-box__link {
+  margin-left: 5px;
+  color: red;
+}
