@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap");
+@import "reset.css";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 500px;
+  height: 1000px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.screen-camera {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.screen-camera .camera-over {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background: #364251;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+  z-index: 200;
+}
+.screen-camera .camera-over:hover {
+  opacity: 1;
+  transform: translate(10px, 10px);
+}
+
+.screen-camera .camera-over {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.screen-camera .camera-over span:nth-child(1),
+.screen-game .game__bottom .bottom__column span:nth-child(1) {
+  margin-bottom: 5px;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+}
+.screen-camera .camera-over span:nth-child(2),
+.screen-game .game__bottom .bottom__column span:nth-child(2) {
+  margin-bottom: 20px;
+  color: hotpink;
+  font-size: 11px;
+  font-weight: 500;
+}
+.screen-camera .camera-over input,
+.screen-game .game__bottom .bottom__column input {
+  width: 80px;
+  height: 20px;
+  background-color: hotpink;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  border: 0;
+}
+
+.screen-camera .camera-under {
+  width: 250px;
+  height: 250px;
+  background: #009e91;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.camera-under .camera-bg {
+  position: relative;
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+  background-color: #c6e6e0;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.camera-bg .square {
+  transform: rotate(53deg);
+  border-radius: 10px;
+}
+.camera-bg .square-206E6C {
+  position: absolute;
+  left: 34px;
+  top: 48px;
+  width: 75px;
+  height: 60px;
+  background-color: #206e6c;
+  z-index: 10;
+}
+
+.camera-bg .circle {
+  border-radius: 100%;
+}
+.camera-bg .circle-big-white {
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+}
+.camera-bg .circle-00BEB5 {
+  width: 45px;
+  height: 45px;
+  overflow: hidden;
+  background-color: #5bc4bd;
+  background: linear-gradient(to bottom right, #67d2ca 50%, #00beb5 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 30;
+}
+.camera-bg .circle-009786 {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background-color: #009786;
+  background: linear-gradient(to bottom right, #00b9a3 50%, #009786 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+}
+.camera-bg .circle-006362 {
+  width: 10px;
+  height: 10px;
+  background-color: #006362;
+  background: linear-gradient(to bottom right, #458d8c 50%, #006362 50%);
+  z-index: 10;
+}
+.camera-bg .circle-small-white {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  z-index: 25;
+}
+
+.camera-bg .square-big-E9F3EF {
+  position: absolute;
+  top: -60px;
+  left: -60px;
+  width: 50px;
+  height: 200px;
+  background-color: #e9f3ef;
+  transform: rotate(45deg);
+}
+
+.camera-bg .square-small-E9F3EF {
+  position: absolute;
+  top: -40px;
+  left: -10px;
+  width: 15px;
+  height: 200px;
+  background-color: #e9f3ef;
+  transform: rotate(45deg);
+}
+
+.screen-camera .circle-EA7778 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 5px;
+  height: 5px;
+  background-color: #ea7778;
+  background: linear-gradient(to bottom right, #ea7778, #e5b4ad);
+  z-index: 20;
+}
+
+.screen-game {
+  width: 250px;
+  height: 250px;
+  background: #f7a4a1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.screen-game:hover > .game__top {
+  transform: translateY(-40px);
+}
+.screen-game:hover > .game__bottom {
+  transform: translateY(-80px);
+}
+
+.screen-game .game__top {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 20px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.screen-game .game__bottom {
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  top: 100%;
+  background-color: #283748;
+  transition: transform 0.5s ease-in-out;
+}
+
+.screen-game .game__bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.screen-game .game__bottom .bottom__column:nth-child(1) {
+  margin-top: 5px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.screen-game .game__bottom .bottom__column:nth-child(2) {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.screen-game .game__top {
+  position: relative;
+  overflow: hidden;
+}
+
+.screen-game .game__top .circle {
+  position: absolute;
+  border-radius: 100%;
+}
+
+.screen-game .outer-blue {
+  position: relative;
+  top: 25px;
+  left: 19px;
+  width: 40px;
+  height: 40px;
+  background-color: #31bce6;
+  z-index: 20;
+}
+.screen-game .inner-blue {
+  top: 7px;
+  left: 7px;
+  width: 15px;
+  height: 15px;
+  background-color: #6fd0ef;
+}
+
+.screen-game .outer-pink {
+  position: relative;
+  top: 40px;
+  left: 50px;
+  width: 30px;
+  height: 30px;
+  background-color: #ff7979;
+  z-index: 30;
+}
+.screen-game .inner-pink {
+  top: 5px;
+  left: 5px;
+  width: 8px;
+  height: 8px;
+  background-color: #f7a4a1;
+}
+
+.screen-game .outer-green {
+  position: relative;
+  top: 55px;
+  left: 45px;
+  width: 15px;
+  height: 15px;
+  background-color: #069d90;
+  z-index: 40;
+}
+.screen-game .inner-green {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 4px;
+  height: 4px;
+  background-color: #76c4c6;
+}
+
+.screen-game .outer-yellow {
+  position: relative;
+  top: 20px;
+  left: 50px;
+  width: 30px;
+  height: 30px;
+  background-color: #f7dc6a;
+  z-index: 10;
+}
+.screen-game .inner-yellow {
+  top: 5px;
+  left: 5px;
+  width: 8px;
+  height: 8px;
+  background-color: #f7e68a;
+}
+
+.screen-game .square {
+  transform: rotate(53deg);
+  border-radius: 10px;
+}
+.screen-game .square-black {
+  position: absolute;
+  left: 31px;
+  top: 37px;
+  width: 75px;
+  height: 60px;
+  background-color: black;
+}
