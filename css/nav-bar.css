@@ -1,16 +1,17 @@
 .nav {
   position: fixed;
   width: 100%;
-  background-color: #fcfcfc;
-  padding: 20px 50px;
+  height: 70px;
+  padding: 25px 50px;
   left: 0px;
   bottom: 0px;
-  border-top: 1px solid #f7f7f7;
+  background-image: url("../images/nav_bg.png");
 }
 
 .nav .nav__list {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .nav i {
@@ -38,7 +39,7 @@
 
 @keyframes showNavBar {
   from {
-    transform: translateY(80px);
+    transform: translateX(-500px) translateY(40px);
   }
   to {
     transform: none;
@@ -46,7 +47,7 @@
 }
 
 .nav {
-  transform: translateY(80px);
+  transform: translateX(-500px) translateY(40px);
   animation: showNavBar 0.5s ease-out forwards;
   animation-delay: 0.5s;
 }

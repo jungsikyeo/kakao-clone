@@ -28,18 +28,25 @@
     </div>
     <header class="header">
       <div class="header__header-column">
-        <h1 class="header__title">More</h1>
+        <h1 class="header__title">더보기</h1>
       </div>
       <div class="header__header-column">
         <span class="header__icon">
-          <i class="fas fa-search"></i>
+          <i class="fas fa-search">
+            <input
+              type="text"
+              value=""
+              placeholder="대화 내용 검색"
+              class="header__search-input"
+            />
+          </i>
         </span>
         <span class="header__icon">
-          <i class="fas fa-qrcode"></i>
+          <a href="#"><i class="fas fa-qrcode"></i></a>
         </span>
         <span class="header__icon">
           <a href="settings.html">
-            <i class="fas fa-cog"></i>
+            <a href="settings.html"><i class="fas fa-cog"></i></a>
           </a>
         </span>
       </div>
@@ -48,13 +55,15 @@
       <header class="more__header">
         <div class="friends__friend friend friend--lg">
           <div class="friend__column">
-            <img src="images/avatar.jpeg" class="g-avatar friend__avatar" />
+            <a href="profile_12.html">
+              <img src="images/avatar.jpeg" class="g-avatar friend__avatar" />
+            </a>
             <div class="friend__content">
               <span class="friend__name">
-                Jungsik Yeo
+                Multiyeo
               </span>
               <span class="friend__status">
-                multicampus.com
+                www.naver.com
               </span>
             </div>
           </div>
@@ -68,7 +77,7 @@
               <i class="far fa-smile fa-2x"></i>
             </span>
             <span class="more__btn-title">
-              Emotions
+              이모티콘
             </span>
           </li>
           <li class="more__btn">
@@ -76,7 +85,7 @@
               <i class="fas fa-brush fa-2x"></i>
             </span>
             <span class="more__btn-title">
-              Themes
+              테마
             </span>
           </li>
           <li class="more__btn">
@@ -84,31 +93,84 @@
               <i class="fab fa-kickstarter-k fa-2x"></i>
             </span>
             <span class="more__btn-title">
-              Account
+              계정
             </span>
           </li>
         </ul>
       </header>
       <section class="more__suggestions">
-        <h5 class="more__title">Suggetions</h5>
         <ul class="more__suggestions-list">
+          <li class="more__suggestion suggestion">
+            <span class="suggestion__icon">
+              <i class="far fa-envelope fa-2x"></i>
+            </span>
+            <span class="suggestion__title">메일</span>
+          </li>
           <li class="more__suggestion suggestion">
             <span class="suggestion__icon">
               <i class="fas fa-quote-right fa-2x"></i>
             </span>
-            <span class="suggestion__title">KaKao Story</span>
+            <span class="suggestion__title">스토리</span>
           </li>
           <li class="more__suggestion suggestion">
             <span class="suggestion__icon">
               <i class="fas fa-beer fa-2x"></i>
             </span>
-            <span class="suggestion__title">KaKao friends</span>
+            <span class="suggestion__title">프렌즈</span>
           </li>
           <li class="more__suggestion suggestion">
             <span class="suggestion__icon">
               <i class="fas fa-gamepad fa-2x"></i>
             </span>
-            <span class="suggestion__title">Friends Gem</span>
+            <span class="suggestion__title">게임</span>
+          </li>
+          <li class="more__suggestion suggestion">
+            <span class="suggestion__icon">
+              <i class="far fa-calendar-check fa-2x"></i>
+            </span>
+            <span class="suggestion__title">캘린더</span>
+          </li>
+          <li class="more__suggestion suggestion">
+            <span class="suggestion__icon">
+              <i class="fas fa-gift fa-2x"></i>
+            </span>
+            <span class="suggestion__title">선물하기</span>
+          </li>
+          <li class="more__suggestion suggestion">
+            <span class="suggestion__icon">
+              <i class="fas fa-shopping-basket fa-2x"></i>
+            </span>
+            <span class="suggestion__title">쇼핑하기</span>
+          </li>
+          <li class="more__suggestion suggestion">
+            <span class="suggestion__icon">
+              <i class="fas fa-utensils fa-2x"></i>
+            </span>
+            <span class="suggestion__title">주문하기</span>
+          </li>
+          <li class="more__suggestion suggestion">
+            <span class="suggestion__icon">
+              <i class="fas fa-music fa-2x"></i>
+            </span>
+            <span class="suggestion__title">멜론</span>
+          </li>
+          <li class="more__suggestion suggestion">
+            <span class="suggestion__icon">
+              <i class="fas fa-cut fa-2x"></i>
+            </span>
+            <span class="suggestion__title">헤어샵</span>
+          </li>
+          <li class="more__suggestion suggestion">
+            <span class="suggestion__icon">
+              <i class="fas fa-archive fa-2x"></i>
+            </span>
+            <span class="suggestion__title">서랍</span>
+          </li>
+          <li class="more__suggestion suggestion">
+            <span class="suggestion__icon">
+              <i class="fas fa-th-large fa-2x"></i>
+            </span>
+            <span class="suggestion__title">전체서비스</span>
           </li>
         </ul>
       </section>

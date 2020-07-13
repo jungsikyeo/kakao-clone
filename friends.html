@@ -28,70 +28,245 @@
     </div>
     <header class="header">
       <div class="header__header-column">
-        <h1 class="header__title">Friends</h1>
+        <h1 class="header__title">친구</h1>
       </div>
       <div class="header__header-column">
         <span class="header__icon">
-          <i class="fas fa-search"></i>
+          <i class="fas fa-search">
+            <input
+              type="text"
+              value=""
+              placeholder="대화 내용 검색"
+              class="header__search-input"
+            />
+          </i>
         </span>
-        <span class="header__icon">
-          <i class="fas fa-cog"></i>
-        </span>
+        <div class="header__icon friends__menu-btn">
+          <a href="#"><i class="fas fa-cog"></i></a>
+          <div class="friends__menu-list">
+            <div class="friends__menu"><span>편집</span></div>
+            <div class="friends__menu"><span>친구 관리</span></div>
+            <div class="friends__menu"><span>전체 설정</span></div>
+          </div>
+        </div>
       </div>
     </header>
     <main class="friends">
       <header class="friends__header">
         <div class="friends__friend friend friend--lg">
           <div class="friend__column">
-            <img src="images/avatar.jpeg" class="g-avatar friend__avatar" />
+            <a href="profile_1.html"><img src="images/avatar.jpeg" class="g-avatar friend__avatar" /></a>
             <div class="friend__content">
               <span class="friend__name">
-                Jungsik Yeo
+                Multiyeo
               </span>
               <span class="friend__status">
-                multicampus.com
+                www.naver.com
               </span>
             </div>
           </div>
         </div>
       </header>
       <div class="friends__plus">
-        <h5 class="friends__title">Plus friend</h5>
+        <h5 class="friends__title">생일인 친구</h5>
         <div class="friends__friend friend">
           <div class="friend__column">
-            <img src="images/avatar.jpeg" class="friend__avatar" />
+            <a href="profile_2.html"><img src="images/go_icon.png" class="friend__avatar" /></a>
             <div class="friend__content">
               <span class="friend__name">
-                Plus Friend
+                GO Lang
               </span>
             </div>
           </div>
         </div>
       </div>
       <ul class="friends__list">
-        <h5 class="friends__title">Friends 14</h5>
+        <h5 class="friends__title">친구 9</h5>
         <li class="friends__friend friend">
           <div class="friend__column">
-            <img src="images/avatar.jpeg" class="friend__avatar" />
+            <a href="profile_3.html"><img src="images/graphql_icon.png" class="friend__avatar" /></a>
             <div class="friend__content">
-              <span class="friend__name">
-                Jungsik Yeo
+              <span id="graphql" class="friend__name">
+                GraphQL
               </span>
               <span class="friend__status">
-                multicampus.com
+                graphql.org
               </span>
             </div>
           </div>
           <div class="friend__column">
             <div class="friend__now-listening">
-              <span>
-                FTISLAND (FT ISLAND)
-                <i class="fas fa-play"></i>
+              <a href="https://m.music.naver.com/album/index.nhn?albumId=4574324&type=" target="_blank">
+                <span>
+                  사랑하게 될 줄 알았어 - 전미도
+                  <i class="far fa-play-circle"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </li>
+        <li class="friends__friend friend">
+          <div class="friend__column">
+            <a href="profile_4.html"><img src="images/html_icon.png" class="friend__avatar" /></a>
+            <div class="friend__content">
+              <span id="html5" class="friend__name">
+                HTML5
+              </span>
+              <span class="friend__status">
+                namu.wiki/w/HTML5
+              </span>
+            </div>
+          </div>
+        </li>
+        <li class="friends__friend friend">
+          <div class="friend__column">
+            <a href="profile_5.html"><img src="images/js_icon.png" class="friend__avatar" /></a>
+            <div class="friend__content">
+              <span id="javascript" class="friend__name">
+                JavaScript
+              </span>
+              <span class="friend__status">
+                namu.wiki/w/JS
+              </span>
+            </div>
+          </div>
+        </li>
+        <li class="friends__friend friend">
+          <div class="friend__column">
+            <a href="profile_6.html"><img src="images/nodejs_icon.png" class="friend__avatar" /></a>
+            <div class="friend__content">
+              <span id="nodejs" class="friend__name">
+                NodeJS
+              </span>
+              <span class="friend__status">
+                nodejs.org
+              </span>
+            </div>
+          </div>
+        </li>
+        <li class="friends__friend friend">
+          <div class="friend__column">
+            <a href="profile_7.html"><img src="images/python_icon.png" class="friend__avatar" /></a>
+            <div class="friend__content">
+              <span id="python" class="friend__name">
+                Python
+              </span>
+              <span class="friend__status">
+                www.python.org
+              </span>
+            </div>
+          </div>
+        </li>
+        <li class="friends__friend friend">
+          <div class="friend__column">
+            <a href="profile_8.html"><img src="images/react_icon.png" class="friend__avatar" /></a>
+            <div class="friend__content">
+              <span id="reactjs" class="friend__name">
+                ReactJS
+              </span>
+              <span class="friend__status">
+                ko.reactjs.org
+              </span>
+            </div>
+          </div>
+          <div class="friend__column">
+            <div class="friend__now-listening">
+              <a href="https://m.music.naver.com/track/index.nhn?trackId=37237" target="_blank">
+                <span>
+                  Honesty - 신화
+                  <i class="far fa-play-circle"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </li>
+        <li class="friends__friend friend">
+          <div class="friend__column">
+            <a href="profile_9.html"><img src="images/redux_icon.png" class="friend__avatar" /></a>
+            <div class="friend__content">
+              <span id="redux" class="friend__name">
+                Redux
+              </span>
+              <span class="friend__status">
+                redux.js.org
+              </span>
+            </div>
+          </div>
+        </li>
+        <li class="friends__friend friend">
+          <div class="friend__column">
+            <a href="profile_10.html"><img src="images/typescript_icon.png" class="friend__avatar" /></a>
+            <div class="friend__content">
+              <span id="typescript" class="friend__name">
+                TypeScript
+              </span>
+              <span class="friend__status">
+                www.typescriptlang.org
+              </span>
+            </div>
+          </div>
+          <div class="friend__column">
+            <div class="friend__now-listening">
+              <a href="https://m.music.naver.com/track/index.nhn?trackId=40000335" target="_blank">
+                <span>
+                  아로하 - 조정석
+                  <i class="far fa-play-circle"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </li>
+        <li class="friends__friend friend">
+          <div class="friend__column">
+            <a href="profile_11.html"><img src="images/css3_icon.png" class="friend__avatar" /></a>
+            <div class="friend__content">
+              <span id="css3" class="friend__name">
+                CSS3
+              </span>
+              <span class="friend__status">
+                namu.wiki/w/CSS
+              </span>
+            </div>
+          </div>
+        </li>
+        <li class="friends__friend friend">
+          <div class="friend__column">
+            <a href="profile_2.html"><img src="images/go_icon.png" class="friend__avatar" /></a>
+            <div class="friend__content">
+              <span id="go" class="friend__name">
+                GO Lang
+              </span>
+              <span class="friend__status">
+                golang.org
               </span>
             </div>
           </div>
         </li>
       </ul>
+      <div class="friends__index-box smallScreen">
+        <div class="friends__index">
+          <a><span><i class="fas fa-star"></i></span></a>
+          <a href="#graphql"><span>ㄱ</span></a>
+          <a href="#nodejs"><span>ㄴ</span></a>
+          <a href="#"><span>ㄷ</span></a>
+          <a href="#reactjs"><span>ㄹ</span></a>
+          <a href="#"><span>ㅁ</span></a>
+          <a href="#"><span>ㅂ</span></a>
+          <a href="#css3"><span>ㅅ</span></a>
+          <a href="#html5"><span>ㅇ</span></a>
+          <a href="#"><span>ㅈ</span></a>
+          <a href="#"><span>ㅊ</span></a>
+          <a href="#"><span>ㅋ</span></a>
+          <a href="#typescript"><span>ㅌ</span></a>
+          <a href="#python"><span>ㅍ</span></a>
+          <a href="#"><span>ㅎ</span></a>
+          <a href="#"><span>A</span></a>
+          <a href="#"><span>F</span></a>
+          <a href="#"><span>O</span></a>
+          <a href="#"><span>Z</span></a>
+          <a href="#">#</span></a>
+        </div>
+      </div>
     </main>
     <nav class="nav">
       <ul class="nav__list">

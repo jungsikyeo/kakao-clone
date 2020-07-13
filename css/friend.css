@@ -1,4 +1,5 @@
 .friend {
+  padding-bottom: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,6 +28,27 @@
   align-items: center;
 }
 
+.friend .friend__column:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.friend .friend__column:nth-child(2) .friend__bottom-unread-circle {
+  width: 16px;
+  height: 16px;
+  margin-top: 5px;
+  font-size: 12px;
+  font-weight: 700;
+  background-color: red;
+  border-radius: 100%;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .friend__content .friend__name {
   display: block;
   font-weight: 600;
@@ -49,10 +71,26 @@
 }
 
 .friend .friend__now-listening {
-  border: 2px solid #52e084;
+  border: 2px solid #3f5666;
   padding: 5px 10px;
   border-radius: 15px;
   font-size: 14px;
+}
+
+@keyframes animNowListening {
+  0% {
+    transform: none;
+  }
+  100% {
+    background: #2c90ee;
+    border: 0;
+    color: #ffffff;
+    font-weight: 600;
+  }
+}
+
+.friend__now-listening:active {
+  animation: 0.3s animNowListening ease-in-out forwards;
 }
 
 .friend__now-listening span {
