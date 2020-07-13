@@ -23,3 +23,9 @@
     display: flex;
   }
 }
+
+@media screen and (max-height: 550px) {
+  .smallScreen {
+    display: none;
+  }
+}

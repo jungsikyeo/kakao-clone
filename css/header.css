@@ -1,27 +1,110 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 .header .header__title {
-    font-size: 24px;
-    font-weight: 700;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 .header .header__icon {
-    font-size: 20px;
-    margin-left: 20px;
-    cursor: pointer;
+  position: relative;
+  font-size: 20px;
+  margin-left: 20px;
+  cursor: pointer;
 }
 
 .header .header__header-column {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .header .header__back-btn {
-    font-size: 22px;
-    margin-right: 20px;
+  font-size: 22px;
+  margin-right: 20px;
 }
+
+.header .header__header-column img {
+  padding-right: 5px;
+}
+
+.header__header-column .friends__menu-list {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 210px;
+  height: 150px;
+  padding-left: 10px;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
+    rgba(0, 0, 0, 0.024) 0px -6px 16px -6px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
+    rgba(0, 0, 0, 0.024) 0px -6px 16px -6px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
+    rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  opacity: 0;
+}
+
+.friends__menu-btn > a:hover ~ .friends__menu-list {
+  opacity: 1;
+  z-index: 100;
+}
+
+.friends__menu-btn .friends__menu-list .friends__menu {
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.header__header-column .fa-comment {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__header-column .fa-plus {
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  width: 10px;
+  height: 10px;
+  font-size: 5px;
+  background-color: #b4f0ff;
+}
+
+.header__header-column .fa-search {
+  position: relative;
+}
+
+.header__header-column .fa-search .header__search-input {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 20px;
+  height: 40px;
+  border: 0;
+  opacity: 0.1;
+  border-radius: 0;
+  padding: 10px;
+  font-size: 14px;
+  transition: width 0.5s ease-in-out, border-radius 0.5s ease-in-out,
+    transform 0.5s ease-in-out;
+}
+
+.header__header-column .fa-search .header__search-input:focus {
+  width: 170px;
+  height: 40px;
+  opacity: 1;
+  border: 2px solid #b4f0ff;
+  outline: none;
+  transform: translateX(-180px);
+  border-radius: 40px;
+}
+

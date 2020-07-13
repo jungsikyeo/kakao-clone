@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap");
 @import "reset.css";
 @import "status-bar.css";
+@import "chat.css";
 @import "header.css";
 @import "nav-bar.css";
 @import "friend.css";
@@ -8,7 +9,6 @@
 @import "find.css";
 @import "more.css";
 @import "settings.css";
-@import "chat.css";
 @import "mobile.css";
 
 * {
@@ -16,7 +16,7 @@
 }
 
 body {
-  background-color: white;
+  background-image: url("../images/bg.png");
   padding: 10px 20px;
   color: #020202;
   font-family: "Open Sans", sans-serif;
