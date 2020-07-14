@@ -75,7 +75,7 @@
   left: 15px;
   width: 10px;
   height: 10px;
-  font-size: 5px;
+  font-size: 10px;
   background-color: #b4f0ff;
 }
 
@@ -107,4 +107,3 @@
   transform: translateX(-180px);
   border-radius: 40px;
 }
-
