@@ -29,6 +29,7 @@
 }
 
 .friend .friend__column:nth-child(2) {
+  width: 80px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
