@@ -29,11 +29,14 @@
 }
 
 .friend .friend__column:nth-child(2) {
-  width: 80px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+}
+
+.friend .friend__column .chat__day {
+  width: 80px;
 }
 
 .friend .friend__column:nth-child(2) .friend__bottom-unread-circle {
