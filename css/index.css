@@ -10,6 +10,7 @@
 @import "more.css";
 @import "settings.css";
 @import "mobile.css";
+@import "intro.css";
 
 * {
   box-sizing: border-box;
